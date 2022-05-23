@@ -1,22 +1,50 @@
-<div style="border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;width:500px;margin:50px auto;font-size:12px;">  
-    <h2 style="border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;">
-        您在 <a style="text-decoration:none;color: #12ADDB;" href="<%=siteUrl%>" target="_blank">
-            <%=siteName%>
-            </a>上的评论有了新的回复
-    </h2> 
-    { <%=pname%> } 同学，您曾发表评论：
-    <div style="padding:0 12px 0 12px;margin-top:18px">
-        <div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;">
-            <%-ptext%>
+<style>
+    @font-face {
+        font-family: HarmonyOS_Sans_SC_Medium;
+        font-style: normal;
+        font-display: swap;
+        src: url(https://jsdelivr.pai233.top/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.subset.woff2) format('woff2')
+    }
+    * {
+        font-family: HarmonyOS_Sans_SC_Medium
+    }
+</style>
+<div style="border-radius:5px;width:680px;margin:30px auto 0;max-width:100%">
+    <div style="box-shadow:0 0 30px 0 rgb(219 216 214);border-radius:5px;width:630px;margin:auto;max-width:100%;;margin-bottom:-30px">
+        <div style="width:200px;height:40px;margin-left:0;text-align:center;line-height:40px;text-decoration:none;color:#fff;background-color:#94a9b9;border-radius:5px 0">Dear: { <%=pname%> }</div>
+        <div style="line-height:180%;padding:0 15px 12px;margin:auto;color:rgb(0, 0, 0);font-size:14px;margin-bottom:0">
+            <h2 style="border-bottom:1px solid #ddd;font-size:16px;font-weight:400;padding:0px 0 10px 8px">
+                <span style="color:#12addb;font-weight:700">&gt; </span>您在 
+                <a style="text-decoration:none;color:#f55066"href="{permalink}" target="_blank">「<%=siteName%>」</a>的评论有了新的回复呐~</h2>
+            <div style="padding:0 12px 0 12px;margin-top:18px">
+                <div class="Messages_box">
+                    <p style="display:flex;justify-content:flex-end">您的评论：</p>
+                    <div class="ax_post_box-comments-single Messages-author" style="display: flex;justify-content: flex-end;margin-bottom: 5px">
+                        <div class="ax_post_box-comment-text" style="position: relative;margin-right: 10px">
+                            <div class="ax_post_box-comment-text-inner" style="background-color: #f1f3fa;padding: 10px;border-radius: 9px;margin-bottom: 3px"><%-ptext%></div>
+                        </div>
+                    </div>
+                    <p><strong><%=name%></strong> 给你回复：</p>
+                    <div class="ax_post_box-comments-single Messages-user" style="display: flex;margin-bottom: 5px">
+                        <div class="ax_post_box-comment-text" style="position: relative;">
+                            <div class="ax_post_box-comment-text-inner" style="background-color: #f1f3fa;padding: 10px;border-radius: 9px;margin-bottom: 3px"><%-text%></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="color:#8c8c8c;font-size:10px;width:100%;text-align:center;word-wrap:break-word;margin-top: 20px;">
+                <p>加油！运气和实力并存，做时代的追梦人！</p>
+            </div>
+            <div style="text-align:center">
+                <a style="text-decoration:none;color:#fff;background-image: -webkit-linear-gradient(0deg, #3ca5f6 0%, #a86af9 100%);padding:5px 20px;border-radius:4px;position:absolute;margin-left:-35px;margin-top:10px" href="<%=url%>" target="_blank">查看</a>
+            </div>
         </div>
-        <p><strong><%=name%></strong>回复说：</p>
-        <div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;">
-            <%-text%>
+        <div style="color:#8c8c8c;font-size:10px;width:100%;text-align:center;margin-top:50px">
+            <p>本邮件为系统自动发送，请勿直接回复~</p>
         </div>
-        <p>您可以点击<a style="text-decoration:none; color:#12addb" href="<%=url%>" target="_blank">查看回复的完整內容 </a>，欢迎再次光临 <a style="text-decoration:none; color:#12addb" 
-            href="<%=siteUrl%>" target="_blank"><%=siteName%></a>。
-            <br>
-            本邮件为系统自动发送，请勿直接回复。
-        </p>  
-    </div>  
+        <div style="color:#8c8c8c;padding-bottom: 10px;font-size:10px;width:100%;text-align:center">
+            <p>©2022 Copyright i囡漫笔</p>
+			<p>欢迎访问<a href="https://i-nmb.cn" style="text-decoration:none;color: black;">主博客</a></p>
+        </div>
+    </div>    
 </div>
